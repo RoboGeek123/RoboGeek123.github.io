@@ -2,7 +2,7 @@
 layout: post
 title: Research Project- The Start
 ---
-[![N|Solid](https://github.com/images/logo.png)]
+![alt text](https://drive.google.com/file/d/1l-8X1HQbPxnFF1NAM9Hyq0FmaboK6Rlb/view?usp=sharing "Logo Title Text 1")
 
 # The Beginning
 A couple of years ago, I began to take a strong interest into Cyber Security. I started pursuing the field through DEFCON talks, youtube videos, and articles about this fascinating new world. It didn’t take long before I became connected with a local group — #misec; a Michigan based Cyber Security / IT professional development group.
