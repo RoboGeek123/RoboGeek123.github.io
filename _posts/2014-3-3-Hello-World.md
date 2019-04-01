@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Post 1 Coming Soon!
+title: Research Project- The Start
 ---
 
-#The Beginning
+# The Beginning
 A couple of years ago, I began to take a strong interest into Cyber Security. I started pursuing the field through DEFCON talks, youtube videos, and articles about this fascinating new world. It didn’t take long before I became connected with a local group — #misec; a Michigan based Cyber Security / IT professional development group.
 
-I quickly took to this new community of professionals and friends who encouraged me to continue feeding my hunger to learn more. And as is often the case in IT, the more I learned, the more questions I gathered. Fast forward a bit, and everyone’s talking about this convention that just happened — Converge: Detroit; a Detroit Cyber Security conference. Disappointed that I had just missed it, I started looking for the next con — GrrCon; of Grand Rapids. I requested the time off work and eagerly looked forward to my first real convention.
+I quickly took to this new community of professionals and friends who encouraged me to continue feeding my hunger to learn more. And as is often the case in IT, the more I learned, the more questions I gathered. Fast forward a bit, and everyone’s talking about this convention that just happened — Converge: Detroit; a Detroit Cyber Security conference. Disappointed that I had just missed it, I started looking for the next con — [GrrCon](http://grrcon.com/); of Grand Rapids. I requested the time off work and eagerly looked forward to my first real convention.
 
-#The Conference
+# The Conference
 
 With a tinge of anxiety and full of excitement, I headed up to Grand Rapids to discover an incredible conference full of people whom I had chatted with on the #misec slack channel as well as other cyber security and IT professionals. Finally, I had really found my people. I was surrounded by people who had the same interests, got the same jokes, and had the same curiosity for technology as me. And just like me, they wanted to learn how things worked. They loved tearing into devices to see the guts and inner workings. By the end of this incredible conference, I was inspired, felt at home, and was eager to break ground into some research to continue my learning. After all, what better way to learn something than to jump right in right? So I set out a goal for myself — -I would write a talk on SOMETHING. *dun dun duuuuun*
 
 I knew I wanted to research and develop a talk, but ON WHAT. At this point, I’m still really new in Cyber Security. I know just enough to get myself in trouble. But, I DO have a lot of experience with Audio Visual Systems and equipment. So, after much deliberation and forethought, I chose my point of research: Risks & Vulnerabilities in Enterprise Audio Visual Solutions.
 
-#The Beginning of Research — A bit more than I can chew?
+# The Beginning of Research — A bit more than I can chew?
 
 With my newfound topic heading and some years of experience as an Audio Visual Support Technician, I set out to research vulnerabilities in audio visual solutions found in large businesses across the world. I distinctly remember thinking to myself: “There can’t be that much right?”. “I bet all the cool vulnerabilities are all patched up”. Was I ever wrong…
 
@@ -24,4 +24,4 @@ I began downloading data query files with tags such as “AMX”, “Crestron”
 
 It was at this point that I came across my first real hurdle my research project: Parsing and Normalizing the Data — Making sense of the noise.
 
-Read Part 2 — Cleaning The Data
+Read [Part 2 — Cleaning The Data](https://medium.com/@atippy83/research-project-part-2-cleaning-the-data-479c87c61706)
