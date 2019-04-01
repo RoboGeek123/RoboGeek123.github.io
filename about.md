@@ -1,10 +1,14 @@
 ---
 layout: page
-title: About
+title: About Me
 permalink: /about/
 ---
 
-Some information about you!
+I am an Audio Visual Support Technician with a knack for Information Security and DIY.  
+
+You can find me on
+-[Twitter](https://twitter.com/Tibbbbz)
+
 
 ### More Information
 
@@ -12,4 +16,4 @@ A place to include any other types of information that you'd like to include abo
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[tippyresearch@gmail.com](mailto:email@domain.com)
