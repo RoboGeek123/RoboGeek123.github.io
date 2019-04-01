@@ -2,7 +2,7 @@
 layout: post
 title: Research Project- The Start
 ---
-![alt text](https://drive.google.com/file/d/1l-8X1HQbPxnFF1NAM9Hyq0FmaboK6Rlb/view?usp=sharing "Header image")
+![alt text](https://doc-0g-8c-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/gjjfcmioht2l4p218v8fb64nkk2atcvm/1554141600000/01053194267081207233/*/1l-8X1HQbPxnFF1NAM9Hyq0FmaboK6Rlb "Header image")
 
 # The Beginning
 A couple of years ago, I began to take a strong interest into Cyber Security. I started pursuing the field through DEFCON talks, youtube videos, and articles about this fascinating new world. It didn’t take long before I became connected with a local group — #misec; a Michigan based Cyber Security / IT professional development group.
