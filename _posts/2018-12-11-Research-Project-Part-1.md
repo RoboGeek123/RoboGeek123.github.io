@@ -21,11 +21,10 @@ I knew I wanted to research and develop a talk, but ON WHAT. At this point, I’
 
 With my newfound topic heading and some years of experience as an Audio Visual Support Technician, I set out to research vulnerabilities in audio visual solutions found in large businesses across the world. I distinctly remember thinking to myself: *“There can’t be that much right?”. “I bet all the cool vulnerabilities are all patched up”.* Was I ever wrong…
 
-![alt text](https://cdn-images-1.medium.com/max/1200/1*u0WDtwKu-F8I4VW7_UqbVg.png)
+![alt text](https://cdn-images-1.medium.com/max/1200/1*u0WDtwKu-F8I4VW7_UqbVg.png) ![alt text](https://cdn-images-1.medium.com/max/600/1*8AlD7kvXptUMkl0YuNpqFg.png)
 
 I discovered the absolute firehose of information on the internet known as [Shodan](https://www.shodan.io/explore) and began searching queries involving popular audio-visual devices and manufacturers that I’m familiar with. If you’re not familiar with Shodan, it’s a search engine for IoT connected devices. Essentially, if it reaches out to the internet, it’s probably somewhere on Shodan. After many searches using just the web GUI, being limited to the Shodan’s parameters, I chased after more. I created a student account; free with a .edu email address FYI and was able to access a much greater spread of features than before. Perfect, now I could use filters such as “port:80” and “Product: Crestron” to look deeper into the results. To say I was surprised at the amount of “low hanging fruit” with these devices was an understatement. It seemed to be limitless. Unnecessary ports open, unauthenticated admin web GUI’s, and other bad security hygiene. I found smart homes, conference rooms, video conference systems, tens of thousands of indecipherable AV products and devices, and so so much more than I had anticipated.
 
-![alt text](https://cdn-images-1.medium.com/max/600/1*8AlD7kvXptUMkl0YuNpqFg.png)
 
 I began downloading data query files with tags such as “AMX”, “Crestron”, ”Extron”, and “TV” hoping to find some devices that I could poke and research to gain further understanding. And I did just that. All in total, I had upwards of 70,000 online devices of some kind.
 
