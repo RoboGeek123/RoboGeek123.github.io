@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pi-Hole: DNS For Dummies
+title: Pi-Hole - DNS For Dummies
 ---
 
 ![alt text](https://cdn-images-1.medium.com/max/800/1*-RCw0DPPVuRd_DplQfHBGQ.png)
