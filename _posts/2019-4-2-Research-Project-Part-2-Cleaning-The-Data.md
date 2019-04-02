@@ -3,7 +3,6 @@ layout: post
 title: Research Project - Part 2 - Cleaning The Data
 ---
 
-# Research Project — Part 2 — Cleaning The Data
 
 This is part 2 of a series on my research into Audio Visual Device Vulnerabilities. If you haven’t yet read Part 1, I’d highly recommend it as the posts are sequential in nature.
 
