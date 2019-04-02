@@ -52,7 +52,8 @@ I was really interested in how many specific devices were open to the internet. 
 
 With the incredible help and guidance of the #programming channel of #misec, I began to write a program that would prompt the user for a file name to read, and count the unique phrases in the file and output the number for each unique phrase in a CSV file. It was a great challenge to myself and I couldn’t be happier with the results. I’ve embedded the code below. (Or you can find it [here too](https://github.com/RoboGeek123/PyCounter/blob/master/PyCounter%20.py))
 
-`import csv
+~~~~
+import csv
 import os
 
 print("\nThis program will count the frequency of unique phrases in a text file!\n")
@@ -86,7 +87,8 @@ with open(csv_file, 'w') as f:
         w.writerow([k,v])
 
 print('\nDone!')
-`
+~~~~
+
 
 Naturally, I learned afterward that many other programs such as Excel, Google Sheets, or Google Data Studio (which I later used to visualize my findings), have this function built into them but I’m still happy I challenged myself and developed my Python knowledge. And at last, after much debugging and tinkering I was able to create a working script that met my needs. I uploaded the project to GitHub and solidified my first Repo.
 
