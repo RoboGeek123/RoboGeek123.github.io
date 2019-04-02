@@ -15,10 +15,11 @@ I do **NOT** condone any of these techniques or practices. Do not log into or at
 
 ![alt text](https://cdn-images-1.medium.com/max/800/1*ZJTRZD5ittpYXMhzbYOAfw.png)
 
-#IoT Overview
+# IoT Overview
 ![alt text](https://cdn-images-1.medium.com/max/600/0*oqNI1scACFTbsSFL.jpg)
+
 It’s no surprise at this point that many IoT devices and manufacturers have been the source of many problems and frustrations within the infosec community. IoT manufacturers consistently are late if existent at all to the “infosec game”: Security is commonly the lowest priority in development. As a result, we’ve seen malware for IoT devices skyrocket through the years. What I don’t think many people have considered though is the presence of AV devices within this circle and their potential risk to the enterprises and environments around them. As the two formerly separate worlds of AV and IT have merged closer and closer, there has been a lot of growth in companies that now are faced with IT frameworks. As more and more devices are released with “connected features”, the problem gets larger and larger. Even basic security hygiene and standard practices have yet to be adopted by many manufacturers.
 
-#Default Passwords & Device Settings
+# Default Passwords & Device Settings
 ![alt text](https://cdn-images-1.medium.com/max/600/0*d6zKsweReAPqMdRU)
 
