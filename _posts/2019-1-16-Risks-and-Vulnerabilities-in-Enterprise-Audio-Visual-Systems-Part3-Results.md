@@ -201,6 +201,7 @@ One of the most interesting conclusions I made from the data was that most of th
 * Universities
 * Small Businesses
 * Existing Legacy equipment
+
 ![pic](https://cdn-images-1.medium.com/max/600/1*NF4P2iXhrWGLkTrdnN6gzA.png)
 
 # How do we better secure our organizations?
@@ -212,17 +213,21 @@ One of the most interesting conclusions I made from the data was that most of th
 3. Disable unnecessary ports and features
 4. Consistent firmware upgrades with a network device manager
 5. Physically secure technology in a locked rack
+
 ![pic](https://cdn-images-1.medium.com/max/800/0*TRjeL9vSL1tqgPpJ)
 
 **First** and foremost, you should ensure your router isn’t port forwarding or exposing any devices to the open internet. This should be your first and foremost priority in evaluating these devices. All of the devices that I found have no reason to be on the internet. WHY **GOD WHY** do you need to monitor your 10 channel switcher or control panel over the internet? You don’t, you really don’t. You’re making A/V guys look bad. Please stop it.
+
 ![pic](https://cdn-images-1.medium.com/max/600/0*ga7cHiDxgULuzKUw.jpg)
 
 **Secondly**, if you absolutely HAVE TO put your device(s) online, then please make sure they’re secured by a non-default password. As mentioned above in multiple devices, many manufacturers ship devices with many default “features” enabled and default passwords enabled. Before you “go live” and implement any of these devices, ensure that the password has been changed to a secure password.
 
 ![pic](https://cdn-images-1.medium.com/max/600/0*uo_hpLltsYhRHUDZ.jpg)
+
 It is often lamented that security is often overlooked, underfunded, or underprioritized which brings me to my third point: As an Audio-Visual provider/ supplier it is **always** a good idea to make security a focal point of your operations just as you would with more traditionally “mission critical” focuses. The current state of IT is such that you must be vigilant in maintaining a security-focused product or solution to mitigate risk and harm to your organization and your customers. In doing so, you can rest easy knowing that you aren’t opening up your customers to risk by shipping them conference room designs or configurations with gaping security holes that could have been prevented. I’m not a sales guy by any stretch of the word, but your customers and clients will thank you for the effort. It is well worth every bit of effort.
 
 ![pic](https://cdn-images-1.medium.com/max/600/0*HAqLCsie5JK2k_ua.jpg)
+
 I’ve said it once already, and I’ll say it again: Update your firmware! Firmware updates are critical for these devices. Primarily for operation and mitigation of bugs and glitches which results in better uptimes, but as mentioned before, security. The task of updating firmware for devices can pose a huge challenge, especially when completed by a smaller team. Consider that your team manages audiovisual support for a large enterprise. Your team is responsible for managing and servicing over 500 conference rooms of various capabilities. The task of upgrading and maintaining firmware on all of these rooms and devices is quite taxing on top of maximizing room uptime and handling your teams regular workload. On one hand, you could manually upgrade the firmware with each visit, or you can utilize a device management suite such as Crestron Fusion or Cisco Unified Communications Manager (CUCM) to push out firmware to hundreds of devices with one click regardless of scale. Additionally, you can measure and report metrics on individual devices, and even change passwords or download system logs. Device Managers save time, reduce risk, and maximize uptime for minimal costs.
 
 ![pic](https://cdn-images-1.medium.com/max/600/0*qDBYq-yKhH0jjb5M.png)
