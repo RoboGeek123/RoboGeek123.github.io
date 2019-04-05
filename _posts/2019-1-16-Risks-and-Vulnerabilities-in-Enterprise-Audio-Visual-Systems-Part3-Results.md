@@ -144,7 +144,145 @@ I wasn’t able to glean as much information from AMX devices as I could with ot
 
 ![pic](https://cdn-images-1.medium.com/max/600/0*UopRzqs-XXgCdEg-)
 
+# ICSA-16–049–02A — Backdoor Accounts!
 
+>“The usernames “1MB@tMaN” and “BlackWidow” were hard-coded in the firmware and allow for remote login in debug mode, granting the ?>attacker access to tools not provided to administrators such as packet sniffing.”-ics-cert
+
+But, just like any devices, AMX devices are not free of vulnerabilities. Backdoor accounts were embedded in the code by AMX employees for testing and debugging and have elevated privileges to configure and modify.
+
+![Pic](https://cdn-images-1.medium.com/max/600/0*cO_3Uwt9DSj_VCx2)
+
+## Products Affected
+
+* NX Controllers
+* DVX Series
+* DGX Series
+* NI series
+
+This vulnerability is similar to the Crestron TSW/ MC3 vulnerability over the telnet like a client. Users can access these devices and send arbitrary commands as they see fit.
+
+# AMX Web Control- Unauthenticated
+
+![pic](https://cdn-images-1.medium.com/max/600/1*9tP3-FiFeuZZHdm3C6XDkQ.png)
+
+Unfortunately, I found far too many touch panels that don’t even require technical skill to access. Similarly to the Crestron TSW touch panels, some AMX touchpanels have web pages for web control. Fortunately, unlike some control pages, I was not automatically logged under admin privileges. However, what I discovered was almost worse. I was granted “guest” privileges with seemingly admin level access to controls. I could issue strings and commands to the master controller directly from the web page.
+
+![pic](https://cdn-images-1.medium.com/max/600/0*AftOsU1FyHv35urU)
+![pic](https://cdn-images-1.medium.com/max/600/0*GbLO-cwaEqBjDgJf)
+
+For whatever reason, even though I was “logged in” (Note: I never completed any log-in prompts), I had nearly full access to any controls or configurations that I pleased. What could go wrong? Why is this a guest account privilege?
+
+![pic](https://cdn-images-1.medium.com/max/800/0*0K8T-YiTWHCr7Li8.png)
+
+![pic](https://cdn-images-1.medium.com/max/1200/1*ucMZGG5HncxWAc7HUi8yRA.png)
+
+Despite not finding a lot of devices online, Extron devices proved to be rather interesting to research. One trend I found was that many devices that provided an HTTP page were unauthenticated and open for anyone to look at or control. As in aforementioned devices, all I had to do was find IP’s with HTTP ports open and visit the IP address. I was able to gain default admin access to many devices such as the switcher below using this method. Why are these here!? Why aren’t they secured?!
+
+![pic](https://cdn-images-1.medium.com/max/1200/0*p4MXKloBwD16qHfT)
+
+I had similar experiences with Extron controllers and control systems as well…
+
+![pic](https://cdn-images-1.medium.com/max/800/1*clkizbnjomIoUp3pB-WQpA.png)
+
+
+And lastly, my favorite device that I found was the SMP series media processors. These devices are used to capture and store video recordings or screen captures of content. Similarly to other Extron devices, I was able to start and stop recordings, start streams, change resolutions…etc. Even more so, I was able to enter “preview mode” for the content being shared; which in this case was a camera feed with content. All from the click of a link, without ANY logging in. I could even have downloaded content from their “secure” FTP server using “admin” or “user” credentials…which were not applied. So come right in I guess.
+
+![pic](https://cdn-images-1.medium.com/max/600/0*ncHRPftLU4stctBb)
+![pic](https://cdn-images-1.medium.com/max/800/1*48jTBtgr6DFamr0AWKeoBQ.png)
+![pic](https://cdn-images-1.medium.com/max/400/1*zbNIdfCGOQvCSkTrawbqNg.png)
+
+# Most Vulnerable Organizations- Breakdown
+![pic](https://cdn-images-1.medium.com/max/1200/1*UGDly2RyU-DtiwGqb822CQ.png)
+
+One of the most interesting conclusions I made from the data was that most of the devices came out of private ISP’s and not colleges or universities. I did indeed find many many universities with devices that were open facing, but this isn’t just a “university problem”. These security risks seem to span to both private and public sectors.
+
+## At Risk Organizations
+* Understaffed/ Inexperienced AV/ IT Teams/ Integrators
+* Universities
+* Small Businesses
+* Existing Legacy equipment
+![pic](https://cdn-images-1.medium.com/max/600/1*NF4P2iXhrWGLkTrdnN6gzA.png)
+
+# How do we better secure our organizations?
+![pic](https://cdn-images-1.medium.com/max/800/0*HCKXYdECXWwdqTJk)
+
+# A. Basic Security Hygiene
+1. CLOSE YOUR FIREWALLS PLEASE GOD STOP PUTTING DEVICES ONLINE!
+2. Default authentication
+3. Disable unnecessary ports and features
+4. Consistent firmware upgrades with a network device manager
+5. Physically secure technology in a locked rack
+![pic](https://cdn-images-1.medium.com/max/800/0*TRjeL9vSL1tqgPpJ)
+
+**First** and foremost, you should ensure your router isn’t port forwarding or exposing any devices to the open internet. This should be your first and foremost priority in evaluating these devices. All of the devices that I found have no reason to be on the internet. WHY **GOD WHY** do you need to monitor your 10 channel switcher or control panel over the internet? You don’t, you really don’t. You’re making A/V guys look bad. Please stop it.
+![pic](https://cdn-images-1.medium.com/max/600/0*ga7cHiDxgULuzKUw.jpg)
+
+**Secondly**, if you absolutely HAVE TO put your device(s) online, then please make sure they’re secured by a non-default password. As mentioned above in multiple devices, many manufacturers ship devices with many default “features” enabled and default passwords enabled. Before you “go live” and implement any of these devices, ensure that the password has been changed to a secure password.
+
+![pic](https://cdn-images-1.medium.com/max/600/0*uo_hpLltsYhRHUDZ.jpg)
+It is often lamented that security is often overlooked, underfunded, or underprioritized which brings me to my third point: As an Audio-Visual provider/ supplier it is **always** a good idea to make security a focal point of your operations just as you would with more traditionally “mission critical” focuses. The current state of IT is such that you must be vigilant in maintaining a security-focused product or solution to mitigate risk and harm to your organization and your customers. In doing so, you can rest easy knowing that you aren’t opening up your customers to risk by shipping them conference room designs or configurations with gaping security holes that could have been prevented. I’m not a sales guy by any stretch of the word, but your customers and clients will thank you for the effort. It is well worth every bit of effort.
+
+![pic](https://cdn-images-1.medium.com/max/600/0*HAqLCsie5JK2k_ua.jpg)
+I’ve said it once already, and I’ll say it again: Update your firmware! Firmware updates are critical for these devices. Primarily for operation and mitigation of bugs and glitches which results in better uptimes, but as mentioned before, security. The task of updating firmware for devices can pose a huge challenge, especially when completed by a smaller team. Consider that your team manages audiovisual support for a large enterprise. Your team is responsible for managing and servicing over 500 conference rooms of various capabilities. The task of upgrading and maintaining firmware on all of these rooms and devices is quite taxing on top of maximizing room uptime and handling your teams regular workload. On one hand, you could manually upgrade the firmware with each visit, or you can utilize a device management suite such as Crestron Fusion or Cisco Unified Communications Manager (CUCM) to push out firmware to hundreds of devices with one click regardless of scale. Additionally, you can measure and report metrics on individual devices, and even change passwords or download system logs. Device Managers save time, reduce risk, and maximize uptime for minimal costs.
+
+![pic](https://cdn-images-1.medium.com/max/600/0*qDBYq-yKhH0jjb5M.png)
+
+Lastly, in regards to the physical side of security, it is encouraged to store equipment in racks with locks. This will not only prevent any malicious actors from physically compromising the device; such as placing bugs, downgrading firmware…etc, but also prevent end users from trying to “fix” issues. Believe me, your support team will thank you greatly if the equipment is physically secure from any harm or foul play.
+
+# Documentation — Your Best and Worst Friend
+From a malicious actors perspective, the “best” part about many of the risks associated with these devices is the wealth of documentation such as user manuals, programming guides, and setup guides are often widely available to anyone who searches for them. Even if passwords were implemented in devices, many of them are sure to be the default password which can be found with a quick google search. For example, for many of these devices, I was able to find default passwords in under 5 minutes by CTRL-Fing (searching) through user manuals for “default password” or “admin”. In under an hour, I had the default passwords for a number of popular devices as well as documentation for features and other pathways that I could try to exploit. As mentioned above, I did not specifically “log in” to any of these devices or brute force access, however, I don’t believe it would be much of a task at all to obtain access using such methods.
+
+B. Advanced Security Tips
+1. Subnet your devices (Data over here/ Control over there)
+2. Enable encryption on communications
+3. Include AV devices within your IPS/IDS system
+4. Security integrated into the development /planning process — Manually vet and research devices with security team before implementation
+A common practice for securing devices even outside of audiovisual equipment is to utilize subnetting, or multiple sub-networks for specific network traffic. In other words, you can have personal data and financial documents on Network A, and device control data on Network B. This practice is often used in SCADA systems such as power control centers and is often very effective at restricting access to unauthorized users. It should be noted that this a more “advanced” strategy but it is very effective.
+
+# C. Manufacturers — What Can You Do?
+**Security by default/Design — Zero Trust Policy**
+![pic](https://cdn-images-1.medium.com/max/600/1*WO-KvLtKgMmJgz1aQJNePA.gif)
+
+* It should **NOT** be the user's full responsibility to be security experts. We need to share the responsibility
+* No more uniform default passwords for devices (California is enacting this to law by 2020)
+* Disable any unnecessary ports by default
+* HTTP web interfaces **need** passwords
+* Automatic firmware updates (need device manager)
+* Triggered alerts upon outage or error
+* Audit logs enabled by default
+
+# Conclusion
+In 2019, many audiovisual devices still have weak and outdated security practices that open themselves up to considerable risk of data loss or damages. Much of this risk is attributed to default configuration settings such as default passwords, ports, and other “features”. It is my firm belief that manufacturers and consumers alike need to take a more aggressive step together towards mitigating risks in IoT devices by leaning into and learning about basic security hygiene to better protect the organizations they are operating in.
+
+# Thank You!
+
+![pic](https://cdn-images-1.medium.com/max/600/1*DnDyYN3E9t50nn4Iu30bZw.gif)
+
+Many many thanks to my amazing wife for supporting me through my many “rabbit hole” nights of huddling over my computer until 3 am. Thank you to #misec for the many encouraging words and for helping me refine my research. Lastly, thank you to the amazing InfoSec community at GrrCon for sparking my interest and inspiring me to research this topic in the first place.
+
+# Next Steps?
+I am currently working on project that will interact with the Shodan API and gather query data of specific searches on a recurring and automated pattern. In otherwords, I would have much better visibility into potential trends of online devices if I could get the counts of Crestron, Cisco, Extron, AMX , and other devices EVERY day for the span of a year; instead of every Friday for a couple months. Additionally, as mentioned above, I will be looking into the vast numbers of Samsung and LG smart TV/ displays online. This was recently showcased in an “educational” hack by HackerGiraffe on twitter. The so called “CastHack” exploited thousands of chromecasts, roku devices, and smart tv’s which just shows how widespread this issue is.
+
+# Bonus: You’re Really Still Reading This!?
+## Crestron PYNG- HUB Smart Home
+![pic](https://cdn-images-1.medium.com/max/600/0*3xDylFaV7ZPW3WpC.png)
+
+In the course of my research for each manufacturer, I occasionally found devices that were not specifically “Enterprise AV”. For example, Crestron offers many control systems for non-AV applications such as the PYNG-HUB; a smart home hub. Unfortunately, many of the above risks prove true with the PYNG-HUB as well.
+
+![pic](https://cdn-images-1.medium.com/max/600/0*BP9ORkMtTdrdZz1b)
+
+As with many other Crestron devices, I was able to access a webpage to control the device but since PYNG-HUB is a smart hub, the page I accessed was an emulation of the touch control panel for the house… And there’s A LOT of them online. What could possibly go wrong?
+
+![pic](https://cdn-images-1.medium.com/max/600/0*EkYqAeUhLo5kdVI8)
+![pic](https://cdn-images-1.medium.com/max/600/0*8q6Sro3ohKgrY5Fy)
+
+*This is the touch panel I was greeted with upon visiting the IP address provided by Shodan. Full unauthenticated control to someone’s SMART HOME. Fortunately, it appears that this control system only controls the lights. But if I were a malicious actor, this could provide a wealth of information on my target.*
+
+As if this wasn’t bad enough, after exploring the reaches of the panel for a bit I stumbled upon a link, which took me to a report page for metrics about the house including lighting costs, times, and even thermostat data if connected.
+
+![pic](https://cdn-images-1.medium.com/max/800/1*5zDqwCsabD0v-5CTZkTfKg.png)
+
+# Thanks for reading!
 
 
 
