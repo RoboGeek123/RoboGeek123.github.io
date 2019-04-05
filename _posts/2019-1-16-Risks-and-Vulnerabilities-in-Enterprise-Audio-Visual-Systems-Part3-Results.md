@@ -5,8 +5,6 @@ title: Risks & Vulnerabilities in Enterprise Audio Visual Systems — Part 3
 
 ![alt text](https://cdn-images-1.medium.com/max/800/1*qRcB02EQIQTAXcRUTnPMcA.png)
 
-# CURRENTLY UNDER CONSTRUCTION
-
 In my last post, we finally gathered and sorted out the relevant data from my research on various audio-visual devices on Shodan. This post will entail a summary of the research I’ve completed over the past months. Enjoy!
 
 Note: These are the main points of my research. There are other devices and categories of audiovisual equipment that I researched but found to be less critical. If you would prefer to watch the full talk on YouTube, I will be uploading it soon.
