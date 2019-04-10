@@ -22,4 +22,4 @@ Here's a picture of my cat
 
 ### Contact me
 
-[tippyresearch@gmail.com](mailto:email@domain.com)
+#### tippyresearch[AT]gmail.com
