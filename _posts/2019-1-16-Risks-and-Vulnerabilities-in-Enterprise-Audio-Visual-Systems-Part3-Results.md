@@ -1,4 +1,3 @@
-ORIGINAL
 ---
 layout: post
 title: Risks & Vulnerabilities in Enterprise Audio Visual Systems — Part 3 — Results
