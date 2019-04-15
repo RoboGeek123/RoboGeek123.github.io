@@ -6,18 +6,18 @@ title: Multi-Effects Pi-dle Board
 
 ### Guitarix- The Pi-dle Board
 
-Blog Post about Guitarix raspberry pi multi-effects board build
+Blog Post about a Guitarix raspberry pi multi-effects board build
 
-**Note: **This is an intermediate to advanced project. Not recommended for
-beginners to Raspberry Pi/ DIY electronics projects. Proceed at your own risk. I
-am not responsible for your actions during this process. This is a *very*
-lengthy process.**
+**Note: **This is an advanced DIY project. Not recommended for beginners to
+Raspberry Pi/ DIY electronics projects. Proceed at your own risk. I am not
+responsible for your actions during this process. This is a **very** lengthy
+process. Previous experience with Linux terminal and soldering is recommended
 
 ### The Dream
 
-![](https://cdn-images-1.medium.com/max/600/0*eT9Owa0s3VQgag2I.jpg)
-<span class="figcaption_hack">
-DIY Effects Pedal from [kalebaiton](https://imgur.com/user/kalebaiton)</span>
+<br> 
+
+![](https://cdn-images-1.medium.com/max/800/1*cwAtrj5FN9QI3uKJTr--6A.jpeg)
 
 Ever since I first discovered the Raspberry Pi microcomputer, I’ve been
 fascinated with tinkering with them for projects. For a $35 microcomputer, they
@@ -33,8 +33,6 @@ the high-cost Axe-FX system. As with most audio gear, these can drive a high
 price, making them hard to access. So having just finished my Pi-Hole project
 and OBVIOUSLY needing another one, I began researching solutions on the
 raspberry pi platform.
-
-<br> 
 
 ### Options Options Options
 
@@ -75,16 +73,16 @@ a preset for later use.
 ![](https://cdn-images-1.medium.com/max/600/0*oqCwkE4g7961_fU3.jpg)
 
 The largest concern I had when initially researching this project was the CPU
-power and latency limitations of a Raspberry Pi 3b and a USB DAC (Digital to
-Analogue Converter). Many other projects appear to have used audio interfaces
-but this would not fit our small pedalboard size restrictions or budget.
-Luckily, through overclocking and a proper power supply, I was able to get the
-latency down to about 5ms without too much restriction, which is more than quick
-enough.
+processing power and latency limitations of a Raspberry Pi 3b and a USB DAC
+(Digital to Analogue Converter). Many other projects appear to have used audio
+interfaces but this would not fit our small pedalboard size restrictions or
+budget. Luckily, through overclocking and a proper power supply, I was able to
+get the latency down to about 5ms without too much restriction, which is
+sufficient.
 
 <br> 
 
-### Tutorial
+### Tutorial (A General How-To)
 
 <br> 
 
@@ -99,7 +97,15 @@ process.
 
 ### Bill of Materials
 
-<br> 
+Here is also a [Google Drive
+Link](https://docs.google.com/spreadsheets/d/1G8jwDxUFVlETbdXkdR91Q11LxfasgQAYwSIBFPBOx10/edit?usp=sharing)
+with Amazon links attached. The bare minimum cost will is $105 without the
+enclosure. I tried to keep the pedal as affordable as possible in the spirit of
+the build, however, you could build this for anywhere from $105–300 depending on
+your customization options (touch screen, volume pots, power brick, nicer
+woods…etc)
+
+![](https://cdn-images-1.medium.com/max/800/1*0n997b9IwZpcPoOvsF8eGA.png)
 
 ### Phase 1- Set up Raspberry Pi
 
@@ -147,7 +153,7 @@ guitarix adds the desired effects.
 ![](https://cdn-images-1.medium.com/max/600/0*ByjbtSmEGCALyShP)
 
 1.  Connect USB DAC and input/output cables
-1.  Select USB DAC as primary audio device in sound settings
+1.  Select USB DAC as a primary audio device in sound settings
 1.  Go to Preferences →Add/ Remove Software → guitarix 
 
 This should download guitarix as well as the Jack Audio Connection Kit (JACK)
@@ -189,37 +195,120 @@ baker.](https://www.tweaking4all.com/software/macosx-software/macosx-apple-pi-ba
 
 ### Phase 3 — Guitarix/ JACK Autostart On Boot
 
+Now that, we have Guitarix installed on Raspberrian, we need to make our
+raspberry pi automatically start and run both Jackd for audio, and Guitarix for
+effects processing upon boot initialization. We can do this with the following
+steps: (LINK
+[https://raspberrypi.stackexchange.com/questions/8734/execute-script-on-start-up](https://raspberrypi.stackexchange.com/questions/8734/execute-script-on-start-up))
 
-<br> 
+1.  Create a Startup Script (Copy this script for step 2)
 
-<br> 
+    start jackd
+    start guitarix (NEED TO EDIT TO CORRECT SCRIPT)
 
-### Phase 4 — Switching Presets
+2. Create a file for your startup script and write your script in the file:
 
-<br> 
 
-<br> 
+3. Copy and paste in your script from Step 1.
+
+4. Save and exit: Ctrl+X, Y, Enter
+
+5. Make the script executable:
+
+
+5. Register script to be run at startup:
+
+
+7. Auto-login
+
+Next, we will need to ensure that the pi does not get stuck at a login screen
+during initialization. The simplest way to do so is — 
+
+
+![](https://cdn-images-1.medium.com/max/800/0*rh9dsmKytfz3PBjU.png)
+
+7. Finally, reboot your pi 
+
+Your pi should boot up, log in, and start Jack and guitarix automatically. You
+will be able to hear fuzz or your instrument (if plugged in) at this point.
+
+### Phase 4 — Preset Switching
+
+There a number of ways we could facilitate the switching of presets and other
+functions within Guitarix such as using the GPIO (General Input and Output)
+pins, or homebrewing our own MIDI control, however, due to the inherent
+difficulty of this project I’ve opted for the simplest option- External Keyboard
+Encoder.
+
+Luckily for us, Guitarix offers a number of very useful keyboard shortcuts; the
+most basic being for switching presets with numbers 1–10. So if we can route our
+momentary footswitches to keyboard numbers 1 -10, then we will have 10
+functional switches to navigate between presets.
+
+**Ok, how do we do that though…**
+
+To accomplish this, we will solder directly to the header pins of a wired
+keyboard, then connect each footswitch to the appropriate header combinations to
+result in the correct value.
+
+Unfortunately, each keyboard is different, and though there are some [helpful
+guides](https://www.xsimulator.net/community/faq/button-box-made-from-a-keyboard.231/),
+we will have to find the correct X, Y header combinations ourselves. What does
+that mean?
+
+![](https://cdn-images-1.medium.com/max/800/1*f_3pbT5I-cRoFCYR3oQYxg.jpeg)
+
+**Time to break out our test leads!**
+
+![](https://cdn-images-1.medium.com/max/800/0*Hs-qIICicjz3lqLO.jpg)
+
+![](https://cdn-images-1.medium.com/max/800/1*kn7Bl5vLBj5e5z_RA2HQ3w.jpeg)
+
+To discover the correct combination of X and Y headers, it is recommended to use
+a single cable with a test probe as shown above on each end. Plug your keyboard
+into your computer. Carefully, connect one end to one header pin (X), to another
+(Y), and see what is typed when you do this. This will take a decent amount of
+tinkering to find the right combinations to output the values you want.
+
+Here are the combinations for my keyboard — 
+
+![](https://cdn-images-1.medium.com/max/800/1*F5RBBOHp1ICuSGxkqtIq3Q.png)
+
+Now that we know the combinations, we simply need to connect each footswitch to
+the proper headers. For example, per the table above, footswitch 1 would connect
+to 7 (X) and 9 (Y). Here is a rough diagram I’ve drawn up of the connections.
+
+![](https://cdn-images-1.medium.com/max/1200/1*W5X-r93VBin2MOKhqTBVOw.png)
+
+Here is my *very messy* version of this for my prototype.
+
+![](https://cdn-images-1.medium.com/max/800/1*0mqvX24CnPA08UC5xi4mvw.jpeg)
+
+**At last, A prototype!**
+
+![](https://cdn-images-1.medium.com/max/800/1*CYA6OaUwA3yqOkCZPt27-w.jpeg)
+
+![](https://cdn-images-1.medium.com/max/800/1*CW_0UsQZCzq3btqkI8humw.jpeg)
 
 ### Phase 5 — Building the Enclosure
 
-<br> 
+*CURRENTLY IN PROGRESS*
+
+I’ve based the enclosure design around a pedal board design from [Merwin
+Music](https://www.youtube.com/watch?v=KUfju5pGoXo). 
+
+![](https://cdn-images-1.medium.com/max/800/1*igY9o9UmwgdG_OKs4RFDTw.jpeg)
+
+![](https://cdn-images-1.medium.com/max/800/1*4aUUBJ2Em7JnORn9FxjI2w.jpeg)
+
+### Phase 6— Finalization
+
+IN PROGRESS
 
 <br> 
 
 <br> 
 
+<br> 
 
-| Output | X |   |  Y |
-|:------:|:-:|:-:|:--:|
-|    1   | 7 | + |  9 |
-|    2   | 7 | + |  8 |
-|    3   | 7 | + |  1 |
-|    4   | 5 | + |  7 |
-|    5   | 5 | + | 10 |
-|    6   | 5 | + | 13 |
-|    7   | 6 | + | 14 |
-|    8   | 7 | + |  4 |
-|    9   | 6 | + | 13 |
-|   10   | 3 | + | 14 |
-
-
+<br> 
