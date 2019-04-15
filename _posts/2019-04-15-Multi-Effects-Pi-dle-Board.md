@@ -16,7 +16,8 @@ lengthy process.**
 ### The Dream
 
 ![](https://cdn-images-1.medium.com/max/600/0*eT9Owa0s3VQgag2I.jpg)
-<span class="figcaption_hack">DIY Effects Pedal from [kalebaiton](https://imgur.com/user/kalebaiton)</span>
+<span class="figcaption_hack">
+DIY Effects Pedal from [kalebaiton](https://imgur.com/user/kalebaiton)</span>
 
 Ever since I first discovered the Raspberry Pi microcomputer, I’ve been
 fascinated with tinkering with them for projects. For a $35 microcomputer, they
@@ -208,20 +209,5 @@ baker.](https://www.tweaking4all.com/software/macosx-software/macosx-apple-pi-ba
 <br> 
 
 
-
-
-
-| Output | X |   |  Y |
-|:------:|:-:|:-:|:--:|
-|    1   | 7 | + |  9 |
-|    2   | 7 | + |  8 |
-|    3   | 7 | + |  1 |
-|    4   |   | + |    |
-|    5   | 5 | + | 10 |
-|    6   | 5 | + | 13 |
-|    7   | 6 | + | 14 |
-|    8   | 7 | + |  4 |
-|    9   | 6 | + | 13 |
-|   10   | 3 | + | 14 |
 
 
