@@ -209,5 +209,17 @@ baker.](https://www.tweaking4all.com/software/macosx-software/macosx-apple-pi-ba
 <br> 
 
 
+| Output | X |   |  Y |
+|:------:|:-:|:-:|:--:|
+|    1   | 7 | + |  9 |
+|    2   | 7 | + |  8 |
+|    3   | 7 | + |  1 |
+|    4   |   | + |    |
+|    5   | 5 | + | 10 |
+|    6   | 5 | + | 13 |
+|    7   | 6 | + | 14 |
+|    8   | 7 | + |  4 |
+|    9   | 6 | + | 13 |
+|   10   | 3 | + | 14 |
 
 
