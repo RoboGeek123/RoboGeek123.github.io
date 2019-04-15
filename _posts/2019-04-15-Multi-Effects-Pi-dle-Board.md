@@ -4,7 +4,8 @@ title: Multi-Effects Pi-dle Board
 ---
 
 # The Idea
-![Helix](https://github.com/AnthonyTippy/Images/blob/master/headrush-pedalboard.jpg)
+![Helix](https://github.com/AnthonyTippy/Images/blob/master/headrush-pedalboard.jpg) ![Raspberry Pi 3](https://github.com/AnthonyTippy/Images/blob/master/14643-Raspberry_Pi_3_B_-02.jpg)
+
 Since I started playing guitar years ago, I've always loved tinkering with electronics and building my own equipment.  I've always wanted to tinker with a large multi-effects pedal board similar to Axe Effects or the Line 6 Helix.  However, these boards are often very expensive.  What if we could build our own based around a Raspberry Pi 3.
 
 
