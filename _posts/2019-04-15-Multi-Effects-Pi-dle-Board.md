@@ -107,6 +107,8 @@ woods…etc)
 
 ![](https://cdn-images-1.medium.com/max/800/1*0n997b9IwZpcPoOvsF8eGA.png)
 
+---
+
 ### Phase 1- Set up Raspberry Pi
 
 ![](https://cdn-images-1.medium.com/max/600/1*J0xtvElCr4c4BGHUuPROyg.png)
@@ -143,6 +145,8 @@ arm_freq, and some can only handle 1000.
 NOTE: Steps 5 and 6 are not required but I found that it was easier to remotely
 configure the Pi (especially since we will eventually be setting it up in
 ‘headless mode’)
+
+---
 
 ### Phase 2 — Guitarix & JACK
 
@@ -193,6 +197,8 @@ For more information about [guitarix ](http://guitarix.org/)see the
 **strongly advise** creating an image backup through a program like [apple pi
 baker.](https://www.tweaking4all.com/software/macosx-software/macosx-apple-pi-baker/)
 
+---
+
 ### Phase 3 — Guitarix/ JACK Autostart On Boot
 
 Now that, we have Guitarix installed on Raspberrian, we need to make our
@@ -231,6 +237,8 @@ during initialization. The simplest way to do so is —
 
 Your pi should boot up, log in, and start Jack and guitarix automatically. You
 will be able to hear fuzz or your instrument (if plugged in) at this point.
+
+---
 
 ### Phase 4 — Preset Switching
 
@@ -290,6 +298,8 @@ Here is my *very messy* version of this for my prototype.
 
 ![](https://cdn-images-1.medium.com/max/800/1*CW_0UsQZCzq3btqkI8humw.jpeg)
 
+---
+
 ### Phase 5 — Building the Enclosure
 
 *CURRENTLY IN PROGRESS*
@@ -300,6 +310,8 @@ Music](https://www.youtube.com/watch?v=KUfju5pGoXo).
 ![](https://cdn-images-1.medium.com/max/800/1*igY9o9UmwgdG_OKs4RFDTw.jpeg)
 
 ![](https://cdn-images-1.medium.com/max/800/1*4aUUBJ2Em7JnORn9FxjI2w.jpeg)
+
+---
 
 ### Phase 6— Finalization
 
