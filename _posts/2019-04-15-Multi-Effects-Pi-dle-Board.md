@@ -2,11 +2,11 @@
 layout: post
 title: Multi-Effects Pi-dle Board
 ---
+![](https://github.com/AnthonyTippy/Images/blob/master/Pedal%20Board%20Banner.png?raw=true)
+
 # CURRENTLY UNDER CONSTRUCTION
 
 ### Guitarix- The Pi-dle Board
-
-Blog Post about a Guitarix raspberry pi multi-effects board build
 
 **Note:** *This is an advanced DIY project. Not recommended for beginners to
 Raspberry Pi/ DIY electronics projects. Proceed at your own risk. I am not
