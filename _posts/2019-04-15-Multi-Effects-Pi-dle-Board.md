@@ -8,10 +8,10 @@ title: Multi-Effects Pi-dle Board
 
 Blog Post about a Guitarix raspberry pi multi-effects board build
 
-**Note: **This is an advanced DIY project. Not recommended for beginners to
+**Note:** *This is an advanced DIY project. Not recommended for beginners to
 Raspberry Pi/ DIY electronics projects. Proceed at your own risk. I am not
-responsible for your actions during this process. This is a **very** lengthy
-process. Previous experience with Linux terminal and soldering is recommended
+responsible for your actions during this process. This is a very lengthy
+process. Previous experience with Linux terminal and soldering is recommended*
 
 ### The Dream
 
@@ -120,20 +120,20 @@ woods…etc)
 (Windows)](https://sourceforge.net/projects/win32diskimager/) or [Balena Etcher
 (MAC)](https://www.balena.io/etcher/)
 
-4. Plug in SD card / peripheral connections to Raspberry Pi and boot up
+1. Plug in SD card / peripheral connections to Raspberry Pi and boot up
 
 ![](https://cdn-images-1.medium.com/max/800/0*ZuD24plkqpAkqsRA.gif)
 
-5. Connect to local wifi and enable VNC connections with `sudo raspi-config` in
+1. Connect to local wifi and enable VNC connections with `sudo raspi-config` in
 terminal.
 
 ![](https://cdn-images-1.medium.com/max/800/0*uroG8naXy01Cl-7B.png)
 
-6. Navigate to Interfacing Options and enable VNC connections.
+1. Navigate to Interfacing Options and enable VNC connections.
 
-7. Reboot and connect through VNC on desktop/laptop 
+1. Reboot and connect through VNC on desktop/laptop 
 
-8. Lastly, change the [GPU/ CPU
+1. Lastly, change the [GPU/ CPU
 settings](https://howtoraspberrypi.com/how-to-overclock-raspberry-pi/) to
 “Overclock” the pi, which will provide maximum performance. (Note: you will
 **need** the proper power supply and heat sinks/fans for this step) You may need
