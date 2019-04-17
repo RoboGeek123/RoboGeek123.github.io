@@ -208,9 +208,16 @@ steps: (LINK
 [https://raspberrypi.stackexchange.com/questions/8734/execute-script-on-start-up](https://raspberrypi.stackexchange.com/questions/8734/execute-script-on-start-up))
 
 1.  Create a Startup Script (Copy this script for step 2)
+    ~~~~
+    pkill jackd
+    pkill guitarix 
 
-    start jackd
-    start guitarix (NEED TO EDIT TO CORRECT SCRIPT)
+    /usr/bin/jackd -dalsa -dhw:Device -r192000 -p512 -n2
+    
+    guitarix
+    ~~~~
+    Note:  I ended up having to create 2 start-up scripts due to complications.  Your mileage may vary
+    
 
 2. Create a file for your startup script and write your script in the file:
 
