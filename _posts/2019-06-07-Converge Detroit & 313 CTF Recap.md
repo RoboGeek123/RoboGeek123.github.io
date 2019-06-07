@@ -151,6 +151,19 @@ also not frying your CPU. Luckily, we didn’t end up doing that.
 “*X marks the spot” *boils down to X being the ascii to octal for 130. AKA the
 130th QR code is the one!
 
+**Note**: I was informed later by the organizer that all QR codes are base64 of
+strings, 999 are inspirobot quotes once decoded. Only one of them is the flag.
+
+Flag=**YouCallThisArcheology?**
+
+So there are two ways to solve
+
+1.  one loop to go through the picture and cut up the picture into individual QR
+codes
+1.  read the QR code and decode the base64
+
+As I said, we got lucky on this one by getting the hint *“X Marks the spot”*
+
 ### 3. Who Knows? (7 Points)
 ![](https://cdn-images-1.medium.com/max/540/1*mOsAlEnJC6Atc_MCEzaYGQ.jpeg)
 
