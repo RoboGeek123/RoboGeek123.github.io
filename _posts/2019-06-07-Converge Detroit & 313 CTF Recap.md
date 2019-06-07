@@ -1,5 +1,3 @@
-# Converge Detroit / 313 CTF Recap
-
 ![](https://cdn-images-1.medium.com/max/540/0*DnNo_kGjKfsXIFjv.png)
 
 2019 was my first year attending Converge Detroit, and my second security
@@ -63,11 +61,14 @@ So the flag = **Bilbo**
 
 “A good glass or a bishop’s hostel might help you find the flag”
 
+
 > “5;5-?()‡(:305–8;48)8¶5(6‡?)9‡†8)‡1-‡);(?-;635–6.48()889;‡45¶8
 > 52‡?;;489556(‡16)-(?;5208)8-(8-:6;5..85()509‡);569.‡))62606;:
 ;‡?(6††08]45;45)288.?;;‡38;48(2:)‡-‡9.08¢598;4‡†¢¢10536)95(36
 5065¢¢5†;‡)‡98.8()‡);48†6116-?0;:9634;283(85;2?;;‡‡;48();‡;4‡)
 8)76008†6†8–6.48(63)?-486395)5(8¶8(:)69.086†88†8†35(5005.‡8”
+
+![](https://cdn-images-1.medium.com/max/540/1*yYLvw8tKF9--S5qValbnTw.png)
 
 Clearly, this is text is eligible. Not base 64,32, or any other I could find. I
 wonder what it could be? I google searched *“A good glass or a bishop’s hostel”
@@ -100,6 +101,7 @@ the text says. More importantly, we note
 Unfortunately, Margialia doesn’t seem to be the correct flag. I tried upper,
 lower, and every case combination with no avail. Finally, I decide to google
 search “Margialia” which google corrected to *“Marginalia”*
+![](https://cdn-images-1.medium.com/max/720/1*GBPFNrmV2ixTIB1AQJtSPQ.png)
 
 At last! Flag = **Marginalia**
 
@@ -117,6 +119,7 @@ esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
 non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”
 
 From best I can tell, this appears to be Latin, so to Google translate we go!
+![](https://cdn-images-1.medium.com/max/720/1*KZqL8v7F1ibb94wGMEV3Mw.png)
 
 Flag =** lorem ipsum**
 
@@ -149,6 +152,7 @@ also not frying your CPU. Luckily, we didn’t end up doing that.
 130th QR code is the one!
 
 ### 3. Who Knows? (7 Points)
+![](https://cdn-images-1.medium.com/max/540/1*mOsAlEnJC6Atc_MCEzaYGQ.jpeg)
 
 This cipher drove me NUTS! I stayed up after the first day of the convention
 trying to solve it based on [this decoding
@@ -164,6 +168,7 @@ me in on the solution. This cipher was REALLY creative.
 
 As it turns out, this cipher was from a 1930’s popular superhero named “*The
 Shadow”. *The Shadow used a “*Chain of Death”* cipher.
+![](https://cdn-images-1.medium.com/max/720/1*QZ2BU-AgDDQXH1RiLPWkIw.png)
 
 I was close to the solution, but missing ONE critical key: Rotation. The way you
 decode the Shadows Death Cipher is by following the symbols left to right until
@@ -187,6 +192,7 @@ trying to butter them up. It worked. Butter was deployed. Flag gained.
 Flag = **Brawndo**
 
 #### **5. ASL (15 Points)**
+![](https://cdn-images-1.medium.com/max/540/1*HdhrPWMf2-2D1EOHfTE9QA.png)
 
 ASL is obviously an American Sign Language challenge. The challenge includes
 File:
@@ -210,6 +216,7 @@ IT in general. There’s a great wealth of information and support from the
 community that will be more than happy to help you and teach you along the way.
 
 Read stuff, learn stuff, practice stuff. Hack the planet!
+![](https://cdn-images-1.medium.com/max/720/0*DxJtGpr44RBeaXcz.gif)
 
 Wanna continue reading? You can read more [writeups of other
 challenges](https://ctftime.org/event/807/tasks/) or check out the[ 313CTF
