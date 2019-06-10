@@ -1,4 +1,4 @@
-![](https://cdn-images-1.medium.com/max/540/0*DnNo_kGjKfsXIFjv.png)
+![](https://github.com/AnthonyTippy/Images/blob/master/Converge%20CTF.png?raw=true)
 
 2019 was my first year attending Converge Detroit, and my second security
 conference ever! I had an absolute BLAST! It was so nice to catch up in person
