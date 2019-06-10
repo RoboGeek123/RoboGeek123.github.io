@@ -17,8 +17,8 @@ You can find me on
 
 ### More Information
 
-Here's a picture of my cat
-![](https://github.com/AnthonyTippy/Images/blob/master/20180605_114352-COLLAGE.jpg?raw=true)
+Here's a picture of my animals
+![](https://github.com/AnthonyTippy/Images/blob/master/20190610_081514-COLLAGE.jpg?raw=true)
 
 ### Contact me
 
