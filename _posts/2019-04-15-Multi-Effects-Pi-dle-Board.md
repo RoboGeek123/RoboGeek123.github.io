@@ -4,8 +4,6 @@ title: Multi-Effects Pi-dle Board
 ---
 ![](https://github.com/AnthonyTippy/Images/blob/master/Pedal%20Board%20Banner.png?raw=true)
 
-# CURRENTLY UNDER CONSTRUCTION
-
 ### Guitarix- The Pi-dle Board
 
 **Note:** *This is an advanced DIY project. Not recommended for beginners to
