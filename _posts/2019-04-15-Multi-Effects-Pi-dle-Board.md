@@ -325,7 +325,7 @@ IN PROGRESS
 
 
 ### New to effects pedals or wanna learn more? 
-Check out https://beginnerguitarhq.com/bass-effect-pedals/ for a great introduction to the various effects pedals and their functions.
+Check out [Beginner Guitar HQ](https://beginnerguitarhq.com/bass-effect-pedals/) for a great introduction to the various effects pedals and their functions.
 
 <br> 
 
