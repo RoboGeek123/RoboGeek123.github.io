@@ -20,7 +20,7 @@ process. Previous experience with Linux terminal and soldering is recommended*
 Ever since I first discovered the Raspberry Pi microcomputer, I’ve been
 fascinated with tinkering with them for projects. For a $35 microcomputer, they
 are surprisingly robust and powerful and are capable of many different tasks and
-uses as I’ve mentioned in (LINK) previous posts. Needless to say, I’ve always
+uses as I’ve mentioned in previous posts. Needless to say, I’ve always
 wanted to try to build a budget-friendly DIY guitar effects/ amp simulator
 pedalboard. Similar to other pedalboards on the market, the pedal board would be
 able to switch between a number of custom programmed effects and tones.
@@ -322,10 +322,15 @@ Music](https://www.youtube.com/watch?v=KUfju5pGoXo).
 
 IN PROGRESS
 
-<br> 
+
+
+### New to effects pedals or wanna learn more? 
+Check out https://beginnerguitarhq.com/bass-effect-pedals/ for a great introduction to the various effects pedals and their functions.
 
 <br> 
 
 <br> 
 
 <br> 
+
+
