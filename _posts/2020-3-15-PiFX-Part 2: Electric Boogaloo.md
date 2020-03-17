@@ -1,6 +1,6 @@
 ---
 layout: post
-title: PIFX-Part 2: Electric Boogaloo
+title: PIFX--Part 2: Electric Boogaloo
 ---
 
 ![](https://cdn-images-1.medium.com/max/2000/0*Att-vThtmXPhOXSq)
