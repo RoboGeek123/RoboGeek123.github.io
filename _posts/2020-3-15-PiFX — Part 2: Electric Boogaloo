@@ -3,9 +3,6 @@ layout: post
 title: PiFX - Part 2: Electric Boogaloo
 ---
 
-
-![](https://cdn-images-1.medium.com/max/3840/0*Fl2tOCfM87hivyKl.png)
-
 ![](https://cdn-images-1.medium.com/max/2000/0*Att-vThtmXPhOXSq)
 
 In [part 1](https://medium.com/@atippy83/guitarix-the-pi-dle-board-8d6298ca8e42), I showed how my progress of designing and building a prototype pedalboard with a raspberry pi and Guitarix; a Linux based amp/effects simulator. The first version of this project was extremely laborious and overcomplicated. Since my initial post, I have been working on a [simpler design](https://medium.com/@atippy83/tinyfx-pifx-board-update-why-cant-i-finish-a-project-7b8eaffa1241) that utilizes the raspberry pi’s GPIO pins and Adafruits gamepad keyboard script to switch between Guitarix presets much easier.
