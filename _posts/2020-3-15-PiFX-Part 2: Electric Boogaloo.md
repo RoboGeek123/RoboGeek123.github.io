@@ -2,6 +2,7 @@
 layout: post
 title: PIFX - Part 2 - Electric Boogaloo
 ---
+![](https://miro.medium.com/max/3840/0*Fl2tOCfM87hivyKl.png)
 
 ![](https://cdn-images-1.medium.com/max/2000/0*Att-vThtmXPhOXSq)
 
