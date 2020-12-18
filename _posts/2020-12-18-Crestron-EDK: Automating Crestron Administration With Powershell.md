@@ -1,6 +1,4 @@
 
-## Crestron EDK — Automating Crestron Administration With Powershell
-
 ![source: [https://postpressmag.com/wp-content/uploads/automation.jpg](https://postpressmag.com/wp-content/uploads/automation.jpg)](https://cdn-images-1.medium.com/max/2000/0*G1ogXtXejDXoeWKw.jpg)
 
 ### **A/V Device Administration: The old way**
