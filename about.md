@@ -5,7 +5,8 @@ permalink: /about/
 ---
 ![alt text](https://github.com/AnthonyTippy/Images/blob/master/PROFILE.jpg?raw=true)
 
-I am an audio visual support technician with an interest in information security and better securing audio visual systems.  
+I am an audio visual support technician with an interest in information security and better securing audio visual systems.
+[Resume Here] (https://github.com/AnthonyTippy/Documents/blob/master/Resume%202020.pdf)
 
 You can find me on
 - [Twitter](https://twitter.com/Tibbbbz)
