@@ -3,7 +3,7 @@ layout: page
 title: About Me
 permalink: /about/
 ---
-![alt text](https://github.com/AnthonyTippy/Images/blob/master/headshot%202.png?raw=true =250x)
+![alt text](https://github.com/AnthonyTippy/Images/blob/master/headshot%202.png?raw=true=250x)
 
 I am an audio visual support technician with an interest in information security and better securing audio visual systems.
 
